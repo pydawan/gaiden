@@ -15,15 +15,15 @@
     "build:prod": "build:prod:html && build:prod:css && documentjs",
     "build:js": "npm run lint && npm run babel",
     "build:dev": "build:dev:html && build:dev:css",
-    "watch:css": "onchange 'src/scss' -- build:dev:css",
-    "watch:html": "onchange 'src/html' -- build:dev:html",
-    "watch:docs:css": "onchange 'demo/scss' 'docs' -- build:docs:css",
+    "watch:css": "onchange 'src/scss' -i -- build:dev:css",
+    "watch:html": "onchange 'src/html' -i -- build:dev:html",
+    "watch:docs:css": "onchange 'demo/scss' 'docs' -i -- build:docs:css",
     "watch:docs:generator": "documentjs -w --debug",
-    "watch:docs": "build:docs:css && http-server -p 8050",
+    "watch:docs": "http-server -p 8050",
     "watch": "npm-run-all -p watch:* watch:docs:*",
     "browsersync": "browser-sync start --config .browser-sync.js",
     "browsersync:docs": "browser-sync start --config .browser-sync-docs.js",
-    "dev": "npm run clear && FORCE_COLOR=1 npm-run-all -p build:dev browsersync browsersync:docs watch"
+    "dev": "npm run clear && FORCE_COLOR=1 npm-run-all -p browsersync browsersync:docs watch"
   },
   "bin": {
     "build:dev:css": "./bin/build/dev/css.js",
