@@ -2,8 +2,8 @@
   * @parent gaiden_css.variables
   * @stylesheet colors.css Colors
   *
-  * There are many different colors that can be used:
-  * @iframe ../../demo/variables/colors/demo.html
+  * There are different colors that can be used:
+  * @iframe ../../demo/variables/colors/demo.html 360
   *
   *
 **/
@@ -13,7 +13,7 @@
   *
   * An some gradients defined
   *
-  * @iframe ../../demo/variables/colors/gradients/demo.html
+  * @iframe ../../demo/variables/colors/gradients/demo.html 260
   *
 **/
 
@@ -42,7 +42,6 @@ $gradients: (
   heart: (bloody base darker),
   night: (rastaGray base darker)
 );
-
 
 @function get-color($color, $key: base, $palette: $colors) {
   @return map-get(map-get($palette, $color), $key);
