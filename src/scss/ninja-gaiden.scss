@@ -1,6 +1,19 @@
+//
+// Settings
+//
+// All settings from Gaiden (colors, grids, base font, etc.);
+//
+// Style guide: settings
 @import 'settings/colors';
 @import 'settings/grid';
 @import 'settings/base_font';
+
+//
+// Tools
+//
+// Tools like mixins
+//
+// Style guide: mixins
 @import 'tools/mixins/flex';
 @import 'tools/mixins/clearfix';
 @import 'tools/mixins/grid';
@@ -8,9 +21,23 @@
 @import 'tools/mixins/gradient';
 @import 'tools/mixins/font_family';
 @import 'tools/mixins/media';
+
+//
+// Generic
+//
+// All generic styles like reset, links and heading
+//
+// Style guide: generic
 @import 'generic/reset';
 @import 'generic/links';
 @import 'generic/heading';
+
+//
+// Components
+//
+// Components for Gaiden
+//
+// Style guide: components
 @import 'components/button';
 
 body {

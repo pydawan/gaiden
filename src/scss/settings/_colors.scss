@@ -1,21 +1,25 @@
-/**
-  * @parent gaiden_css.variables
-  * @stylesheet colors.css Colors
-  *
-  * There are different colors that can be used:
-  * @iframe ../../demo/variables/colors/demo.html
-  *
-  *
-**/
-
-/**
-  * @styles gradients Gradients
-  *
-  * An some gradients defined
-  *
-  * @iframe ../../demo/variables/colors/gradients/demo.html
-  *
-**/
+//
+// Colors
+//
+// Default colors of site
+//
+// Markup:
+// <div style="background-color:#fff; color: #000; padding:20px">$colors.air.base</div>
+// <div style="background-color:#333; color: #fff; padding:20px">$colors.blackNeutral.base</div>
+// <div style="background-color:#eff4fa; color: #000; padding:20px">$colors.punch.base</div>
+// <div style="background-color:#1393f6; color: #fff; padding:20px">$colors.breeze.base</div>
+// <div style="background-color:#21c1ff; color: #fff; padding:20px">$colors.breeze.lighter</div>
+// <div style="background-color:#1272d5; color: #fff; padding:20px">$colors.serious.base</div>
+// <div style="background-color:#004183; color: #fff; padding:20px">$colors.serious.darker</div>
+// warning: (base: #ffd600, darker: #e7ab0c),
+// reward: (base: #40d879, darker: #26a656),
+// rewardType: (base: #5ebd66, darker: #007c0a),
+// bloody: (base: #b24141, darker: #6d0909),
+// rastaGray: (base: #536e7b, darker: #36474e),
+// recusaGray: (base: #e7e7e7),
+// offWhite: (base: #eceff1)
+//
+// Style guide: settings.colors
 
 $colors: (
   air: (base: #fff),
