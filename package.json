@@ -12,7 +12,7 @@
     "babel": "babel --babelrc true -d ./dist/javascripts ./src/javascripts",
     "lint": "eslint ./src/javascripts",
     "uglify": "uglifyjs ./dist/javascripts/*.js -o ./dist/javascripts/app.js",
-    "build:prod": "build:prod:html && build:prod:css && kss:docs",
+    "build:prod": "build:prod:css && kss:docs",
     "build:js": "npm run lint && npm run babel",
     "build:dev": "build:dev:css && kss:docs",
     "watch:css": "onchange \"src/scss\" -- build:dev:css",
