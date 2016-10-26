@@ -1,4 +1,5 @@
 {
+  "title": "Gaiden",
   "source": [ "src/scss" ],
   "destination":  "styleguide/",
   "css": [ "ninja-gaiden.css" ],
