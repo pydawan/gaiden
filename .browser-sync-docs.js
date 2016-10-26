@@ -17,7 +17,7 @@ module.exports = {
   files: "styleguide/*",
   server: {
     baseDir: "styleguide",
-    directory: true
+    directory: false
   },
   port: 8040,
   index: 'index.html',
