@@ -9,4 +9,4 @@ const minifiedFile = `${outputDir}/ninja-gaiden.css`;
 const styleguidePath = './styleguide';
 
 shelljs.exec(`kss --config ${configFile}`);
-shelljs.cp(`${minifiedFile}`, styleguidePath);
+shelljs.cp(minifiedFile, styleguidePath);
