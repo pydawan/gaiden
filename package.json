@@ -48,7 +48,6 @@
     "browser-sync": "^2.17.3",
     "css-mqpacker": "^5.0.1",
     "cssnano-cli": "^1.0.5",
-    "documentjs": "^0.4.4",
     "eslint": "^3.7.1",
     "eslint-config-airbnb": "^12.0.0",
     "eslint-plugin-import": "^2.0.1",
