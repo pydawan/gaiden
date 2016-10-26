@@ -1,4 +1,17 @@
-@mixin generate-grid($breakpoints) {
+/*
+
+  Mixin `generate-grid`
+
+  Mixin that generates our grid. We are using media queries with a mobile first approach. So, our first breakpoint is small, but the columns and container are not on the media queries. The next breakpoint (medium) it is inside of media-queries of previous breakpoint.
+
+  This mixin will generate our columns and the container, considering media-queries for all the breakpoints.
+
+  $breakpoints - map of breakpoints
+  $breakpoints = $defaultBreakpoints - map of breakpoints
+
+  Style guide: tools.mixins
+*/
+@mixin generate-grid($breakpoints: $defaultBreakpoints) {
   $index: 1;
 
   @each $key, $breakpoint in $breakpoints {
@@ -10,7 +23,8 @@
       @include generate-grid-container($breakpoint, $breakpoints, $gutter);
       @include generate-grid-columns($breakpoint, $key, $gutter);
     } @else {
-      @include media-gt(small, $value: $gridSize - 1px) {
+      $previousBreakpoint: map-get(get-breakpoint-by-index($breakpoints, $index - 1), size);
+      @include media-gt(small, $value: $previousBreakpoint) {
         @include generate-grid-container($breakpoint, $breakpoints, $gutter);
         @include generate-grid-columns($breakpoint, $key, $gutter);
       }
@@ -54,8 +68,6 @@
 @mixin generate-grid-container($breakpoint, $breakpoints, $gutterPercentage) {
   $breakpointsLength: length($breakpoints);
   $index: index(map-values($breakpoints), $breakpoint);
-  $nextBreakpoint: if($index < $breakpointsLength, get-breakpoint-index($breakpoints, $index + 1), get-breakpoint-index($breakpoints, $index));
-  $nextGridSize: map-get($nextBreakpoint, size);
   $gridSize: map-get($breakpoint, size);
   $gridPadding: $gutterPercentage / 2;
 
@@ -65,7 +77,7 @@
     @include flexbox;
 
     width: 100%;
-    max-width: $nextGridSize + px;
+    max-width: $gridSize + px;
     margin-left: auto;
     margin-right: auto;
     padding-left: percentage($gridPadding / $gridSize);
@@ -81,7 +93,7 @@
   }
 };
 
-@function get-breakpoint-index($breakpoints, $index) {
+@function get-breakpoint-by-index($breakpoints, $index) {
   @return nth(map-values($breakpoints), $index);
 };
 

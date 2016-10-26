@@ -1,30 +1,37 @@
 /*
-Colors
+  Settings
 
-Default colors of site
+  All settings from Gaiden (colors, grids, base font, etc.);
 
-Markup:
-<div style="background-color:#fff; color: #000; padding:20px">$colors.air.base</div>
-<div style="background-color:#333; color: #fff; padding:20px">$colors.blackNeutral.base</div>
-<div style="background-color:#eff4fa; color: #000; padding:20px">$colors.punch.base</div>
-<div style="background-color:#1393f6; color: #fff; padding:20px">$colors.breeze.base</div>
-<div style="background-color:#21c1ff; color: #fff; padding:20px">$colors.breeze.lighter</div>
-<div style="background-color:#1272d5; color: #fff; padding:20px">$colors.serious.base</div>
-<div style="background-color:#004183; color: #fff; padding:20px">$colors.serious.darker</div>
-<div style="background-color:#ffd600; color: #000; padding:20px">$colors.warning.base</div>
-<div style="background-color:#e7ab0c; color: #000; padding:20px">$colors.warning.darker</div>
-<div style="background-color:#40d879; color: #000; padding:20px">$colors.reward.base</div>
-<div style="background-color:#26a656; color: #fff; padding:20px">$colors.reward.darker</div>
-<div style="background-color:#5ebd66; color: #000; padding:20px">$colors.rewardType.base</div>
-<div style="background-color:#007c0a; color: #fff; padding:20px">$colors.rewardType.darker</div>
-<div style="background-color:#b24141; color: #fff; padding:20px">$colors.bloody.base</div>
-<div style="background-color:#6d0909; color: #fff; padding:20px">$colors.bloody.darker</div>
-<div style="background-color:#536e7b; color: #fff; padding:20px">$colors.rastaGray.base</div>
-<div style="background-color:#36474e; color: #fff; padding:20px">$colors.rastaGray.darker</div>
-<div style="background-color:#e7e7e7; color: #000; padding:20px">$colors.recusaGray.base</div>
-<div style="background-color:#eceff1; color: #000; padding:20px">$colors.offWhite.base</div>
+  Style guide: settings
+*/
+/*
+  Colors
 
-Style guide: settings.colors
+  Default colors of site
+
+  Markup:
+  <div style="background-color:#fff; color: #000; padding:20px">$colors.air.base</div>
+  <div style="background-color:#333; color: #fff; padding:20px">$colors.blackNeutral.base</div>
+  <div style="background-color:#eff4fa; color: #000; padding:20px">$colors.punch.base</div>
+  <div style="background-color:#1393f6; color: #fff; padding:20px">$colors.breeze.base</div>
+  <div style="background-color:#21c1ff; color: #fff; padding:20px">$colors.breeze.lighter</div>
+  <div style="background-color:#1272d5; color: #fff; padding:20px">$colors.serious.base</div>
+  <div style="background-color:#004183; color: #fff; padding:20px">$colors.serious.darker</div>
+  <div style="background-color:#ffd600; color: #000; padding:20px">$colors.warning.base</div>
+  <div style="background-color:#e7ab0c; color: #000; padding:20px">$colors.warning.darker</div>
+  <div style="background-color:#40d879; color: #000; padding:20px">$colors.reward.base</div>
+  <div style="background-color:#26a656; color: #fff; padding:20px">$colors.reward.darker</div>
+  <div style="background-color:#5ebd66; color: #000; padding:20px">$colors.rewardType.base</div>
+  <div style="background-color:#007c0a; color: #fff; padding:20px">$colors.rewardType.darker</div>
+  <div style="background-color:#b24141; color: #fff; padding:20px">$colors.bloody.base</div>
+  <div style="background-color:#6d0909; color: #fff; padding:20px">$colors.bloody.darker</div>
+  <div style="background-color:#536e7b; color: #fff; padding:20px">$colors.rastaGray.base</div>
+  <div style="background-color:#36474e; color: #fff; padding:20px">$colors.rastaGray.darker</div>
+  <div style="background-color:#e7e7e7; color: #000; padding:20px">$colors.recusaGray.base</div>
+  <div style="background-color:#eceff1; color: #000; padding:20px">$colors.offWhite.base</div>
+
+  Style guide: settings.colors
 
 */
 /*
@@ -64,6 +71,33 @@ Style guide: settings.colors
   Style guide: settings.base-font
 */
 @import url("//fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900");
+/*
+  Tools
+
+  Tools like mixins
+
+  Style guide: tools
+*/
+/*
+
+  Mixin `generate-grid`
+
+  Mixin that generates our grid. We are using media queries with a mobile first approach. So, our first breakpoint is small, but the columns and container are not on the media queries. The next breakpoint (medium) it is inside of media-queries of previous breakpoint.
+
+  This mixin will generate our columns and the container, considering media-queries for all the breakpoints.
+
+  $breakpoints - map of breakpoints
+  $breakpoints = $defaultBreakpoints - map of breakpoints
+
+  Style guide: tools.mixins
+*/
+/*
+  Generic
+
+  All generic styles like reset, links and heading
+
+  Style guide: generic
+*/
 /*
   Reset
 
@@ -330,6 +364,13 @@ h5 small,
 }
 
 /*
+  Components
+
+  Components for Gaiden
+
+  Style guide: components
+*/
+/*
  * TODO: temp
  */
 /* line 8, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/components/_button.scss */
@@ -359,7 +400,7 @@ h5 small,
   display: block;
 }
 
-/* line 43, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/ninja-gaiden.scss */
+/* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/ninja-gaiden.scss */
 body {
   font-size: 16px;
   font-family: "Lato", "Arial", sans-serif;
@@ -368,7 +409,7 @@ body {
   color: #333;
 }
 
-/* line 62, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+/* line 74, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
 .container {
   -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
@@ -386,7 +427,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  max-width: 768px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.25%;
@@ -404,28 +445,28 @@ body {
   clear: both;
 }
 
-/* line 77, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+/* line 89, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
 .no-flexbox .container [class*='col-'] {
   float: left;
 }
 
-/* line 27, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+/* line 41, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
 [class*='col-small-'] {
   margin-right: 2.5%;
 }
 
-/* line 30, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+/* line 44, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
 [class*='col-small-']:last-child {
   margin-right: 0;
 }
 
-/* line 34, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+/* line 48, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
 [class*='col-small-'].col-centered {
   margin-right: auto;
   margin-left: auto;
 }
 
-/* line 42, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+/* line 56, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
 [class*='col-'] {
   -webkit-flex-shrink: 0;
   -moz-flex-shrink: 0;
@@ -433,68 +474,176 @@ body {
   flex-shrink: 0;
 }
 
-/* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+/* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
 .col-small-1 {
   width: 6.04167%;
 }
 
-/* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+/* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
 .col-small-2 {
   width: 14.58333%;
 }
 
-/* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+/* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
 .col-small-3 {
   width: 23.125%;
 }
 
-/* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+/* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
 .col-small-4 {
   width: 31.66667%;
 }
 
-/* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+/* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
 .col-small-5 {
   width: 40.20833%;
 }
 
-/* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+/* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
 .col-small-6 {
   width: 48.75%;
 }
 
-/* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+/* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
 .col-small-7 {
   width: 57.29167%;
 }
 
-/* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+/* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
 .col-small-8 {
   width: 65.83333%;
 }
 
-/* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+/* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
 .col-small-9 {
   width: 74.375%;
 }
 
-/* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+/* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
 .col-small-10 {
   width: 82.91667%;
 }
 
-/* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+/* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
 .col-small-11 {
   width: 91.45833%;
 }
 
-/* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+/* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
 .col-small-12 {
   width: 100%;
 }
 
-@media screen and (min-width: 767pxpx) {
-  /* line 62, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+@media screen and (min-width: 360px) {
+  /* line 74, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  .container {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25%;
+    padding-right: 1.25%;
+  }
+  /* line 2, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_clearfix.scss */
+  .no-flexbox .container::before, .no-flexbox .container::after {
+    display: table;
+    content: '';
+  }
+  /* line 8, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_clearfix.scss */
+  .no-flexbox .container::after {
+    clear: both;
+  }
+  /* line 89, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  .no-flexbox .container [class*='col-'] {
+    float: left;
+  }
+  /* line 41, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  [class*='col-medium-'] {
+    margin-right: 2.5%;
+  }
+  /* line 44, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  [class*='col-medium-']:last-child {
+    margin-right: 0;
+  }
+  /* line 48, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  [class*='col-medium-'].col-centered {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /* line 56, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  [class*='col-'] {
+    -webkit-flex-shrink: 0;
+    -moz-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  .col-medium-1 {
+    width: 6.04167%;
+  }
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  .col-medium-2 {
+    width: 14.58333%;
+  }
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  .col-medium-3 {
+    width: 23.125%;
+  }
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  .col-medium-4 {
+    width: 31.66667%;
+  }
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  .col-medium-5 {
+    width: 40.20833%;
+  }
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  .col-medium-6 {
+    width: 48.75%;
+  }
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  .col-medium-7 {
+    width: 57.29167%;
+  }
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  .col-medium-8 {
+    width: 65.83333%;
+  }
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  .col-medium-9 {
+    width: 74.375%;
+  }
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  .col-medium-10 {
+    width: 82.91667%;
+  }
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  .col-medium-11 {
+    width: 91.45833%;
+  }
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  .col-medium-12 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 74, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .container {
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
@@ -527,190 +676,82 @@ body {
   .no-flexbox .container::after {
     clear: both;
   }
-  /* line 77, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 89, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .no-flexbox .container [class*='col-'] {
     float: left;
   }
-  /* line 27, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
-  [class*='col-medium-'] {
-    margin-right: 2.5%;
-  }
-  /* line 30, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
-  [class*='col-medium-']:last-child {
-    margin-right: 0;
-  }
-  /* line 34, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
-  [class*='col-medium-'].col-centered {
-    margin-right: auto;
-    margin-left: auto;
-  }
-  /* line 42, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
-  [class*='col-'] {
-    -webkit-flex-shrink: 0;
-    -moz-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-  }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
-  .col-medium-1 {
-    width: 6.04167%;
-  }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
-  .col-medium-2 {
-    width: 14.58333%;
-  }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
-  .col-medium-3 {
-    width: 23.125%;
-  }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
-  .col-medium-4 {
-    width: 31.66667%;
-  }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
-  .col-medium-5 {
-    width: 40.20833%;
-  }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
-  .col-medium-6 {
-    width: 48.75%;
-  }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
-  .col-medium-7 {
-    width: 57.29167%;
-  }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
-  .col-medium-8 {
-    width: 65.83333%;
-  }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
-  .col-medium-9 {
-    width: 74.375%;
-  }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
-  .col-medium-10 {
-    width: 82.91667%;
-  }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
-  .col-medium-11 {
-    width: 91.45833%;
-  }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
-  .col-medium-12 {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 959pxpx) {
-  /* line 62, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
-  .container {
-    -webkit-box-direction: normal;
-    -webkit-box-orient: horizontal;
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.25%;
-    padding-right: 1.25%;
-  }
-  /* line 2, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_clearfix.scss */
-  .no-flexbox .container::before, .no-flexbox .container::after {
-    display: table;
-    content: '';
-  }
-  /* line 8, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_clearfix.scss */
-  .no-flexbox .container::after {
-    clear: both;
-  }
-  /* line 77, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
-  .no-flexbox .container [class*='col-'] {
-    float: left;
-  }
-  /* line 27, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 41, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   [class*='col-normal-'] {
     margin-right: 2.5%;
   }
-  /* line 30, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 44, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   [class*='col-normal-']:last-child {
     margin-right: 0;
   }
-  /* line 34, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 48, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   [class*='col-normal-'].col-centered {
     margin-right: auto;
     margin-left: auto;
   }
-  /* line 42, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 56, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   [class*='col-'] {
     -webkit-flex-shrink: 0;
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-normal-1 {
     width: 6.04167%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-normal-2 {
     width: 14.58333%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-normal-3 {
     width: 23.125%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-normal-4 {
     width: 31.66667%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-normal-5 {
     width: 40.20833%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-normal-6 {
     width: 48.75%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-normal-7 {
     width: 57.29167%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-normal-8 {
     width: 65.83333%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-normal-9 {
     width: 74.375%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-normal-10 {
     width: 82.91667%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-normal-11 {
     width: 91.45833%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-normal-12 {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 1199pxpx) {
-  /* line 62, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+@media screen and (min-width: 960px) {
+  /* line 74, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .container {
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
@@ -743,75 +784,75 @@ body {
   .no-flexbox .container::after {
     clear: both;
   }
-  /* line 77, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 89, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .no-flexbox .container [class*='col-'] {
     float: left;
   }
-  /* line 27, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 41, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   [class*='col-large-'] {
     margin-right: 2.5%;
   }
-  /* line 30, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 44, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   [class*='col-large-']:last-child {
     margin-right: 0;
   }
-  /* line 34, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 48, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   [class*='col-large-'].col-centered {
     margin-right: auto;
     margin-left: auto;
   }
-  /* line 42, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 56, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   [class*='col-'] {
     -webkit-flex-shrink: 0;
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-large-1 {
     width: 6.04167%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-large-2 {
     width: 14.58333%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-large-3 {
     width: 23.125%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-large-4 {
     width: 31.66667%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-large-5 {
     width: 40.20833%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-large-6 {
     width: 48.75%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-large-7 {
     width: 57.29167%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-large-8 {
     width: 65.83333%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-large-9 {
     width: 74.375%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-large-10 {
     width: 82.91667%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-large-11 {
     width: 91.45833%;
   }
-  /* line 47, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/tools/mixins/_grid.scss */
   .col-large-12 {
     width: 100%;
   }
