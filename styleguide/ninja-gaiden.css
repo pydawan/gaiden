@@ -1,3 +1,32 @@
+/*
+Colors
+
+Default colors of site
+
+Markup:
+<div style="background-color:#fff; color: #000; padding:20px">$colors.air.base</div>
+<div style="background-color:#333; color: #fff; padding:20px">$colors.blackNeutral.base</div>
+<div style="background-color:#eff4fa; color: #000; padding:20px">$colors.punch.base</div>
+<div style="background-color:#1393f6; color: #fff; padding:20px">$colors.breeze.base</div>
+<div style="background-color:#21c1ff; color: #fff; padding:20px">$colors.breeze.lighter</div>
+<div style="background-color:#1272d5; color: #fff; padding:20px">$colors.serious.base</div>
+<div style="background-color:#004183; color: #fff; padding:20px">$colors.serious.darker</div>
+<div style="background-color:#ffd600; color: #000; padding:20px">$colors.warning.base</div>
+<div style="background-color:#e7ab0c; color: #000; padding:20px">$colors.warning.darker</div>
+<div style="background-color:#40d879; color: #000; padding:20px">$colors.reward.base</div>
+<div style="background-color:#26a656; color: #fff; padding:20px">$colors.reward.darker</div>
+<div style="background-color:#5ebd66; color: #000; padding:20px">$colors.rewardType.base</div>
+<div style="background-color:#007c0a; color: #fff; padding:20px">$colors.rewardType.darker</div>
+<div style="background-color:#b24141; color: #fff; padding:20px">$colors.bloody.base</div>
+<div style="background-color:#6d0909; color: #fff; padding:20px">$colors.bloody.darker</div>
+<div style="background-color:#536e7b; color: #fff; padding:20px">$colors.rastaGray.base</div>
+<div style="background-color:#36474e; color: #fff; padding:20px">$colors.rastaGray.darker</div>
+<div style="background-color:#e7e7e7; color: #000; padding:20px">$colors.recusaGray.base</div>
+<div style="background-color:#eceff1; color: #000; padding:20px">$colors.offWhite.base</div>
+
+Style guide: settings.colors
+
+*/
 @import url("//fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900");
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -70,7 +99,43 @@ a:hover {
   text-decoration: underline;
 }
 
-/* line 2, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
+/*
+ *
+ *  Headings
+ *
+ *  General heading styles
+ *
+ *  Markup:
+ *  <h1>Page Title <small>Sub Page Title</small></h1>
+ *  <hr/>
+ *  <h2>Section Title <small>Sub Section Title</small></h2>
+ *  <hr/>
+ *  <h3>Container Title <small>Sub Container Title</small></h3>
+ *  <hr/>
+ *  <h4>Card Title <small>Sub Card Title</small></h4>
+ *  <hr/>
+ *  <h5>Info Title <small>Sub Info Title</small></h5>
+ *  <hr/>
+ *
+ *  Style guide: generic.heading
+*/
+/*
+Heading Classes
+
+You can use classes to avoid implicity styles
+
+Markup:
+<h1 class="{{modifier_class}}">Page Title <small>Sub Page Title</small></h1>
+
+.page-title - Page Title
+.section-title - Section Title
+.container-title - Container Title
+.card-title - Card Title
+.info-title - Info Title
+
+Style guide: generic.heading.classes
+*/
+/* line 39, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
 h1,
 h2,
 h3,
@@ -85,7 +150,7 @@ h5,
   font-weight: 900;
 }
 
-/* line 17, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
+/* line 54, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
 h1 small,
 h2 small,
 h3 small,
@@ -101,7 +166,7 @@ h5 small,
   font-weight: 300;
 }
 
-/* line 24, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
+/* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
 h1,
 .page-title {
   margin-bottom: 8px;
@@ -109,14 +174,14 @@ h1,
 }
 
 @media screen and (min-width: 360px) {
-  /* line 24, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
+  /* line 61, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
   h1,
   .page-title {
     font-size: 36px;
   }
 }
 
-/* line 33, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
+/* line 70, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
 h1 small,
 .page-title small {
   margin-top: 8px;
@@ -124,14 +189,14 @@ h1 small,
 }
 
 @media screen and (min-width: 360px) {
-  /* line 33, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
+  /* line 70, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
   h1 small,
   .page-title small {
     font-size: 32px;
   }
 }
 
-/* line 43, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
+/* line 80, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
 h2,
 .section-title {
   margin-bottom: 4px;
@@ -139,26 +204,26 @@ h2,
 }
 
 @media screen and (min-width: 360px) {
-  /* line 43, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
+  /* line 80, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
   h2,
   .section-title {
     font-size: 24px;
   }
-  /* line 48, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
+  /* line 85, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
   h2 small,
   .section-title small {
     font-size: 22px;
   }
 }
 
-/* line 56, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
+/* line 93, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
 h2 small,
 .section-title small {
   margin-top: 4px;
   font-size: 20px;
 }
 
-/* line 62, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
+/* line 99, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
 h3,
 .container-title {
   margin-bottom: 4px;
@@ -166,21 +231,21 @@ h3,
 }
 
 @media screen and (min-width: 360px) {
-  /* line 62, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
+  /* line 99, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
   h3,
   .container-title {
     font-size: 18px;
   }
 }
 
-/* line 71, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
+/* line 108, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
 h3 small,
 .container-title small {
   margin-top: 4px;
   font-size: 14px;
 }
 
-/* line 77, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
+/* line 114, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
 h4,
 .card-title {
   font-weight: 700;
@@ -188,14 +253,14 @@ h4,
   margin-bottom: 4px;
 }
 
-/* line 85, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
+/* line 122, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
 h4 small,
 .card-title small {
   margin-top: 4px;
   font-size: 14px;
 }
 
-/* line 91, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
+/* line 128, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
 h5,
 .info-title {
   font-weight: 700;
@@ -203,7 +268,7 @@ h5,
   margin-bottom: 4px;
 }
 
-/* line 99, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
+/* line 136, /Users/eduardomatos/projects/getninjas/gaiden/src/scss/generic/_heading.scss */
 h5 small,
 .info-title small {
   margin-top: 4px;

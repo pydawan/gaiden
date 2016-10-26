@@ -1,3 +1,39 @@
+/*
+  Headings
+
+  General heading styles
+
+  Markup:
+  <h1>Page Title <small>Sub Page Title</small></h1>
+  <hr/>
+  <h2>Section Title <small>Sub Section Title</small></h2>
+  <hr/>
+  <h3>Container Title <small>Sub Container Title</small></h3>
+  <hr/>
+  <h4>Card Title <small>Sub Card Title</small></h4>
+  <hr/>
+  <h5>Info Title <small>Sub Info Title</small></h5>
+  <hr/>
+
+  Style guide: generic.heading
+*/
+
+/*
+  Heading Classes
+
+  You can use classes to avoid implicity styles
+
+  Markup:
+  <h1 class="{{modifier_class}}">Page Title <small>Sub Page Title</small></h1>
+
+  .page-title - Page Title
+  .section-title - Section Title
+  .container-title - Container Title
+  .card-title - Card Title
+  .info-title - Info Title
+
+  Style guide: generic.heading.classes
+*/
 
 h1,
 h2,

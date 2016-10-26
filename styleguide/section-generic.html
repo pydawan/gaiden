@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>KSS Style Guide</title>
+  <title>Gaiden</title>
 
   <meta name="description" content="">
   <meta name="generator" content="kss-node">
@@ -16,7 +16,7 @@
 
 <div class="kss-sidebar kss-style">
   <header class="kss-header">
-    <h1 class="kss-doc-title">KSS Style Guide</h1>
+    <h1 class="kss-doc-title">Gaiden</h1>
   </header>
   <nav class="kss-nav">
     <ul class="kss-nav__menu">
@@ -35,6 +35,20 @@
         <a class="kss-nav__menu-link" href="section-generic.html">
           <span class="kss-nav__ref">2</span><span class="kss-nav__name">Generic</span>
         </a>
+            <ul class="kss-nav__menu-child">
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-generic.html#kssref-generic-heading">
+                  <span class="kss-nav__ref ">2.1</span
+                  ><span class="kss-nav__name">Headings</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-generic.html#kssref-generic-heading-classes">
+                  <span class="kss-nav__ref kss-nav__ref-child">2.1.1</span
+                  ><span class="kss-nav__name">Heading Classes</span>
+                </a>
+              </li>
+            </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-mixins.html">
@@ -79,6 +93,156 @@
         </div>
 
     </div>
+    <section id="kssref-generic-heading" class="kss-section kss-section--depth-2">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-generic-heading">
+            <span class="kss-title__ref">
+              2.1
+              <span class="kss-title__permalink-hash">
+                  #generic.heading
+              </span>
+            </span>
+            Headings
+          </a>
+        </h2>
+
+          <div class="kss-description">
+            <p>General heading styles</p>
+
+          </div>
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+
+
+          <div class="kss-modifier__example">
+            <h1>Page Title <small>Sub Page Title</small></h1>
+<hr/>
+<h2>Section Title <small>Sub Section Title</small></h2>
+<hr/>
+<h3>Container Title <small>Sub Container Title</small></h3>
+<hr/>
+<h4>Card Title <small>Sub Card Title</small></h4>
+<hr/>
+<h5>Info Title <small>Sub Info Title</small></h5>
+<hr/>
+          </div>
+
+        </div>
+          <div class="kss-markup kss-style">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;h1&gt;Page Title &lt;small&gt;Sub Page Title&lt;/small&gt;&lt;/h1&gt;
+&lt;hr/&gt;
+&lt;h2&gt;Section Title &lt;small&gt;Sub Section Title&lt;/small&gt;&lt;/h2&gt;
+&lt;hr/&gt;
+&lt;h3&gt;Container Title &lt;small&gt;Sub Container Title&lt;/small&gt;&lt;/h3&gt;
+&lt;hr/&gt;
+&lt;h4&gt;Card Title &lt;small&gt;Sub Card Title&lt;/small&gt;&lt;/h4&gt;
+&lt;hr/&gt;
+&lt;h5&gt;Info Title &lt;small&gt;Sub Info Title&lt;/small&gt;&lt;/h5&gt;
+&lt;hr/&gt;</code></pre>
+          </div>
+
+        <div class="kss-source kss-style">
+          Source: <code>generic/_heading.scss</code>, line 1
+        </div>
+
+    </section>
+    <section id="kssref-generic-heading-classes" class="kss-section kss-section--depth-3">
+
+      <div class="kss-style">
+        <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-generic-heading-classes">
+            <span class="kss-title__ref">
+              2.1.1
+              <span class="kss-title__permalink-hash">
+                  #generic.heading.classes
+              </span>
+            </span>
+            Heading Classes
+          </a>
+        </h3>
+
+          <div class="kss-description">
+            <p>You can use classes to avoid implicity styles</p>
+
+          </div>
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples
+          </div>
+
+            <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+
+          <div class="kss-modifier__example">
+            <h1 class="[modifier class]">Page Title <small>Sub Page Title</small></h1>
+          </div>
+
+            <div class="kss-modifier__name kss-style">
+              .page-title
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Page Title
+            </div>
+            <div class="kss-modifier__example">
+              <h1 class="page-title">Page Title <small>Sub Page Title</small></h1>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .section-title
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Section Title
+            </div>
+            <div class="kss-modifier__example">
+              <h1 class="section-title">Page Title <small>Sub Page Title</small></h1>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .container-title
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Container Title
+            </div>
+            <div class="kss-modifier__example">
+              <h1 class="container-title">Page Title <small>Sub Page Title</small></h1>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .card-title
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Card Title
+            </div>
+            <div class="kss-modifier__example">
+              <h1 class="card-title">Page Title <small>Sub Page Title</small></h1>
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .info-title
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Info Title
+            </div>
+            <div class="kss-modifier__example">
+              <h1 class="info-title">Page Title <small>Sub Page Title</small></h1>
+            </div>
+        </div>
+          <div class="kss-markup kss-style">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;h1 class&#x3D;&quot;[modifier class]&quot;&gt;Page Title &lt;small&gt;Sub Page Title&lt;/small&gt;&lt;/h1&gt;</code></pre>
+          </div>
+
+        <div class="kss-source kss-style">
+          Source: <code>generic/_heading.scss</code>, line 21
+        </div>
+
+    </section>
 </article>
 
 <!-- SCRIPTS -->
