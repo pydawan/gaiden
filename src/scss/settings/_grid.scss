@@ -1,3 +1,31 @@
+/*
+  Grid Settings
+
+  We have 4 breakpoints on grid system. They are ordered by size and all of them have `12 columns`.
+
+  Our default gutter is `30px`. To see more details, like how the grid are generated, you can visit [Tools > Mixins > Grid](./section-mixins.html) section.
+
+  * `Small`: 360px
+  * `Medium`: 768px
+  * `Normal`: 960px
+  * `Large`: 1200px
+
+  The map of sizes is `$defaultBreakpoints`.
+
+  ``` Sass
+  $defaultBreakpoints: (
+    small:  ( columns: 12, size: 360  ),
+    medium: ( columns: 12, size: 768  ),
+    normal: ( columns: 12, size: 960  ),
+    large:  ( columns: 12, size: 1200 )
+  );
+
+  $gridGutter: 30;
+  ```
+
+  Style guide: settings.grid
+*/
+
 $defaultBreakpoints: (
   small:  ( columns: 12, size: 360  ),
   medium: ( columns: 12, size: 768  ),

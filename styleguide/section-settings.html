@@ -47,9 +47,21 @@
         </a>
             <ul class="kss-nav__menu-child">
               <li class="kss-nav__menu-item">
-                <a class="kss-nav__menu-link" href="section-settings.html#kssref-settings-colors">
+                <a class="kss-nav__menu-link" href="section-settings.html#kssref-settings-base-font">
                   <span class="kss-nav__ref ">4.1</span
+                  ><span class="kss-nav__name">Base Font</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-settings.html#kssref-settings-colors">
+                  <span class="kss-nav__ref ">4.2</span
                   ><span class="kss-nav__name">Colors</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-settings.html#kssref-settings-grid">
+                  <span class="kss-nav__ref ">4.3</span
+                  ><span class="kss-nav__name">Grid Settings</span>
                 </a>
               </li>
             </ul>
@@ -87,13 +99,41 @@
         </div>
 
     </div>
+    <section id="kssref-settings-base-font" class="kss-section kss-section--depth-2">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-settings-base-font">
+            <span class="kss-title__ref">
+              4.1
+              <span class="kss-title__permalink-hash">
+                  #settings.base-font
+              </span>
+            </span>
+            Base Font
+          </a>
+        </h2>
+
+          <div class="kss-description">
+            <p>Lato font is a font choiced to our pages. See here the font specs: <a href="https://fonts.google.com/specimen/Lato">https://fonts.google.com/specimen/Lato</a></p>
+
+          </div>
+
+      </div>
+
+
+        <div class="kss-source kss-style">
+          Source: <code>settings/_base_font.scss</code>, line 2
+        </div>
+
+    </section>
     <section id="kssref-settings-colors" class="kss-section kss-section--depth-2">
 
       <div class="kss-style">
         <h2 class="kss-title kss-title--level-2">
           <a class="kss-title__permalink" href="#kssref-settings-colors">
             <span class="kss-title__ref">
-              4.1
+              4.2
               <span class="kss-title__permalink-hash">
                   #settings.colors
               </span>
@@ -162,6 +202,51 @@
 
         <div class="kss-source kss-style">
           Source: <code>settings/_colors.scss</code>, line 1
+        </div>
+
+    </section>
+    <section id="kssref-settings-grid" class="kss-section kss-section--depth-2">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-settings-grid">
+            <span class="kss-title__ref">
+              4.3
+              <span class="kss-title__permalink-hash">
+                  #settings.grid
+              </span>
+            </span>
+            Grid Settings
+          </a>
+        </h2>
+
+          <div class="kss-description">
+            <p>We have 4 breakpoints on grid system. They are ordered by size and all of them have <code>12 columns</code>.</p>
+<p>Our default gutter is <code>30px</code>. To see more details, like how the grid are generated, you can visit <a href="./section-mixins.html">Tools &gt; Mixins &gt; Grid</a> section.</p>
+<ul>
+<li><code>Small</code>: 360px</li>
+<li><code>Medium</code>: 768px</li>
+<li><code>Normal</code>: 960px</li>
+<li><code>Large</code>: 1200px</li>
+</ul>
+<p>The map of sizes is <code>$defaultBreakpoints</code>.</p>
+<pre><code class="lang-Sass">$defaultBreakpoints: (
+  small:  ( columns: 12, size: 360  ),
+  medium: ( columns: 12, size: 768  ),
+  normal: ( columns: 12, size: 960  ),
+  large:  ( columns: 12, size: 1200 )
+);
+
+$gridGutter: 30;
+</code></pre>
+
+          </div>
+
+      </div>
+
+
+        <div class="kss-source kss-style">
+          Source: <code>settings/_grid.scss</code>, line 1
         </div>
 
     </section>

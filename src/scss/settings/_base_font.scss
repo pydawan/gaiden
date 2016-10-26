@@ -1,4 +1,13 @@
 //sass-lint:disable no-url-domains no-url-protocols
+/*
+  Base Font
+
+  Lato font is a font choiced to our pages. See here the font specs: https://fonts.google.com/specimen/Lato
+
+  Weight: -1
+
+  Style guide: settings.base-font
+*/
 @import url('//fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900');
 
 $baseFont: 'Lato';
