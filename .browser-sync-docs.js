@@ -19,7 +19,8 @@ module.exports = {
     baseDir: "styleguide",
     directory: true
   },
-  port: 4000,
+  port: 8040,
+  index: 'index.html',
   open: false,
   cors: true
 };
