@@ -12,20 +12,23 @@
     "babel": "babel --babelrc true -d ./dist/javascripts ./src/javascripts",
     "lint": "eslint ./src/javascripts",
     "uglify": "uglifyjs ./dist/javascripts/*.js -o ./dist/javascripts/app.js",
-    "build:prod": "build:prod:html && build:prod:css && documentjs",
+    "build:prod": "build:prod:html && build:prod:css && kss:docs",
     "build:js": "npm run lint && npm run babel",
-    "build:dev": "build:dev:html && build:dev:css && documentjs",
+    "build:dev": "build:dev:html && build:dev:css && kss:docs",
     "watch:css": "onchange \"src/scss\" -- build:dev:css",
     "watch:html": "onchange \"src/html/\" -- build:dev:html",
-    "watch": "npm-run-all -p watch:css watch:html",
-    "browsersync": "browser-sync start --config browser-sync.js",
-    "dev": "npm run clear && FORCE_COLOR=1 npm-run-all -p build:dev browsersync watch"
+    "watch:docs": "onchange \"src/scss/\" -- kss:docs",
+    "watch": "npm-run-all -p watch:* watch:docs",
+    "browsersync": "browser-sync start --config .browser-sync.js",
+    "browsersync:docs": "browser-sync start --config .browser-sync-docs.js",
+    "dev": "npm run clear && FORCE_COLOR=1 npm-run-all -p build:dev browsersync:docs browsersync watch"
   },
   "bin": {
     "build:dev:css": "./bin/build/dev/css.js",
     "build:dev:html": "./bin/build/dev/html.js",
     "build:prod:css": "./bin/build/prod/css.js",
-    "build:prod:html": "./bin/build/prod/html.js"
+    "build:prod:html": "./bin/build/prod/html.js",
+    "kss:docs": "./bin/docs/kss.js"
   },
   "repository": {
     "type": "git",
