@@ -1,2 +1,11 @@
 //sass-lint:disable-all
+/*
+  Reset
+
+  We are using Eric Meyer's CSS reset. For more information, see https://www.npmjs.com/package/reset-css.
+
+  Weight: -1
+
+  Style guide: generic.reset
+*/
 @import './node_modules/reset-css/_reset';
