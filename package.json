@@ -13,7 +13,7 @@
     "build:dev": "build:dev:html && build:dev:image && build:dev:css",
     "watch:css": "onchange \"src/scss\" -- build:dev:css",
     "watch:html": "onchange \"src/html\" -- build:dev:html",
-    "watch:docs": "onchange \"docs/demo\" -- build:docs:dev",
+    "watch:docs": "onchange \"docs/demo\" -i -- build:docs:dev",
     "watch:image": "onchange \"src/images\" -- build:dev:image",
     "watch:build": "onchange \"build/stylesheets\" -- build:docs:dev",
     "watch": "npm-run-all -p watch:css watch:html watch:docs watch:image watch:build",
