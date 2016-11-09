@@ -2,10 +2,10 @@
 
 const shelljs = require('shelljs');
 
-const sourceDir = "./src/scss";
-const outputDir = "./dist";
+const sourceDir = './src/scss';
+const outputDir = './dist';
 const compiledFile = `${outputDir}/ninja-gaiden.css`;
-const browserSupport = "> 0.1% in BR, not ie 8";
+const browserSupport = '> 0.1% in BR, not ie 8';
 const minifiedFile = `${outputDir}/ninja-gaiden.min.css`;
 
 const options = {
@@ -14,7 +14,7 @@ const options = {
     --output-style compressed \
     -o ${outputDir}`,
   cssnano: `--replace true \
-    --autoprefixer.browsers "${browserSupport}" \
+    --autoprefixer.browsers '${browserSupport}' \
     --safe \
     --sourcemap`,
   mqpacker: `-s`,
