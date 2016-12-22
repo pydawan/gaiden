@@ -7,8 +7,8 @@
 
 .wall {
   padding: {
-    top: 80px;
-    bottom: 80px;
+    top: get-space(section, large);
+    bottom: get-space(section, large);
   }
 
   &--highlighted {

@@ -20,7 +20,7 @@
     display: block;
 
     & + & {
-      margin-top: 16px;
+      margin-top: get-space(element, large);
     }
   }
 
@@ -60,7 +60,7 @@
 
   &__label {
     display: inline-block;
-    margin-bottom: 6px;
+    margin-bottom: get-space(element, small);
     color: get-color((color: blackNeutral, opacity: .9));
     font-size: 15px;
     font-weight: 700;
