@@ -9,19 +9,19 @@
   @include flexbox;
   @include flex-shrink(0);
   @include flex-direction(column);
+  @include justify-content(space-between);
   @include media(small) {
     @include flex-direction(row);
   }
 
   padding: 24px;
-  justify-content: space-between;
 
   .no-flexbox & {
     @include clearfix;
   }
 
   &--centered {
-    justify-content: center;
+    @include justify-content(center);
   }
 
   &--over {
@@ -38,7 +38,7 @@
   }
 
   &__brand {
-    justify-content: flex-start;
+    @include justify-content(flex-start);
 
     .no-flexbox & {
       float: left;
@@ -46,7 +46,7 @@
   }
 
   &__options {
-    justify-content: flex-end;
+    @include justify-content(flex-end);
 
     .no-flexbox & {
       float: right;

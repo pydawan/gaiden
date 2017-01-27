@@ -1,4 +1,4 @@
 .content-centered {
-  justify-content: center;
+  @include justify-content(center);
   text-align: center;
 }

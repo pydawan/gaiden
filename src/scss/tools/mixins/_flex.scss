@@ -71,6 +71,7 @@
 }
 
 @mixin justify-content($value) {
+  //sass-lint:disable-block no-misspelled-properties
   @if $value == flex-end {
     -webkit-box-pack: end;
     -ms-flex-pack: end;

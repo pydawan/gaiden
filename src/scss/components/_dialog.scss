@@ -8,17 +8,17 @@
 
 .dialog {
   @include flex-direction(column);
-  justify-content: center;
+  @include justify-content(center);
 
   &__quote {
     @include flexbox;
     @include flex;
+    @include justify-content(center);
     padding: 30px;
     position: relative;
     background-color: get-color(air);
     border-radius: 10px;
     align-items: center;
-    justify-content: center;
     font-style: italic;
 
     &::after {
@@ -36,8 +36,8 @@
 
   &__user {
     @include flexbox;
+    @include justify-content(center);
     text-align: left;
-    justify-content: center;
 
     &-photo {
       margin-right: 10px;

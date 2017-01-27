@@ -18,10 +18,10 @@
 
   &__content {
     @include flexbox;
+    @include justify-content(center);
     padding: 30px;
     width: 100%;
     align-items: center;
-    justify-content: center;
     text-align: center;
     z-index: 2;
 
