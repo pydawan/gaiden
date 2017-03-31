@@ -13,6 +13,13 @@ The URL of our documents is http://localhost:8000/gaiden-css/index.html.
 
 We have a server build on http://localhost:8001. This `/build` source is a "playground" with same html samples to test. Use and abuse it!
 
+# Fonts
+
+To display fonts correctly add this link to your html
+```html
+<link href='http://fonts.googleapis.com/css?family=Lato:400,400i,700,700i' rel='stylesheet' type='text/css'>
+```
+
 # Release process
 We are using `npm version` to generate our releases. There are 3 kind of releases generally used: major, minor and patch. See the http://semver.org/ for more details.
 
@@ -21,9 +28,9 @@ So, after merge a PR, just execute `npm version major|minor|patch -m "Message of
 The process is:
 
 1. After merge PR on master:
-  
+
   1.1 `git checkout master`;
-  
+
   1.2 `git pull origin master`;
 
 2. run `npm version major|minor|patch -m "Message of your changes"` (important: you need to be an admin to push on master);
