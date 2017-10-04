@@ -9,14 +9,14 @@ const minifiedFile = `${outputDir}/gaiden.min.css`;
 
 const options = {
   sass: ` --include-path ${sourceDir} \
-    --output-style compressed \
+    --output-style expanded \
     -o ${outputDir}`,
   cssnano: `--replace true \
     --no-autoprefixer \
     --safe \
     --sourcemap false`,
   mqpacker: `-s`,
-  postcss: `--use autoprefixer ${compiledFile} -o ${minifiedFile}`,
+  postcss: `--use autoprefixer -o ${minifiedFile}`,
   sasslint: `-c .sass-lint.yml -v`
 }
 
