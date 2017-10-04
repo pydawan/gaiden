@@ -14,7 +14,7 @@ const options = {
     --output-style expanded \
     --sourceComments true \
     -o ${outputDir}`,
-  postcss: `--use autoprefixer ${minifiedFile} -o ${minifiedFile}`,
+  postcss: `--use autoprefixer -o ${minifiedFile}`,
   sasslint: `-c .sass-lint.yml  -v -q`
 }
 
