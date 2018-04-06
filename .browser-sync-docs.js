@@ -21,7 +21,7 @@ module.exports = {
     routes: {
       "/gaiden.css": "./docs/gaiden-css/gaiden.css",
       "/base.css": "./docs/gaiden-css/base.css",
-      "/docs/demo/gaiden-css/images/star-full.svg": "./docs/demo/gaiden-css/images/star-full.svg"
+      "/gaiden/docs/demo/gaiden-css/images/star-full.svg": "./gaiden/docs/demo/gaiden-css/images/star-full.svg"
     }
   },
   port: 8000,
